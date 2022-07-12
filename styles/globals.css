@@ -829,8 +829,8 @@ h3{
   }
   
   .searchIcon {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     background-color: white;
     display: grid;
     place-items: center;
@@ -858,12 +858,12 @@ h3{
     margin-bottom: 20px;
   }
   .hero-banner-container{
-    height: 600px;
+    height: 700px;
   }
   .hero-banner-image{
     width: 70%;
     height: 50%;
-    top: 35%;
+    top: 40%;
   }
   .footer-banner-container{
     height: 700px;
