@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const MONGODB_URL = "mongodb://localhost:27017/orders"
+const MONGODB_URL = "mongodb+srv://sameer:310preF205NJFFtu@cluster0.mz39bki.mongodb.net/?retryWrites=true&w=majority"
 if(!MONGODB_URL) {
     throw new Error(
 
