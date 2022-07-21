@@ -41,4 +41,4 @@ const OrderSchema = new mongoose.Schema(
          timestamps: true
     }
 );
-export default mongoose.models.orders || mongoose.model("orders", OrderSchema);
+export default mongoose.models.lists || mongoose.model("lists", OrderSchema);
