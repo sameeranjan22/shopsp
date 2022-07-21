@@ -47,7 +47,7 @@ const directCheckout = () => {
               window.location = "/success"
           }})
       }catch (error) {
-        console.error(error.response.data);
+        console.log(error.response)
       }
   }
 
