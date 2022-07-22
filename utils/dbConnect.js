@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-
 const MONGODB_URL = "mongodb+srv://admin:ww1GtGmdvtV562oi@cluster1.xyj38vw.mongodb.net/?retryWrites=true&w=majority";
 if(!MONGODB_URL) {
     throw new Error(
