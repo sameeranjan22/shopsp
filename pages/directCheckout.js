@@ -7,6 +7,7 @@ import { useStateContext } from '../context/StateContext';
 
 
 const directCheckout = () => {
+  const [loading, setLoading] = useState(false);
   const cartRef = useRef();
   const {
     totalPrice,
@@ -26,8 +27,8 @@ const directCheckout = () => {
   const [state, setState] = useState();
 
   const handleSubmit = async (event) =>{
+    setLoading(true);
     event.preventDefault();
-    
       const order = {
         "name": name,
         "email": email,
@@ -49,16 +50,12 @@ const directCheckout = () => {
       }catch (error) {
         console.log("Error", error)
       }
+      setLoading(false);
   }
-
-
-
-
   
 return (
   <div className='success-wrapper'>
       <div className="success">
-          
           <h2 className="direct-pay">
               Total Amount Pay ₹{totalPrice - (totalPrice*0.01)}
           </h2>
