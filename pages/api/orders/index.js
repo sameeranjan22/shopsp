@@ -2,8 +2,9 @@ import Order from "../../../models/Order";
 import dbConnect from "../../../utils/dbConnect";
 
 export default async function handler(req, res) {
-    const { method } = req;
     await dbConnect();
+    const { method } = req;
+    
 
     if(method === "GET") {
         try {
