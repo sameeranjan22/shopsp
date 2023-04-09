@@ -7,6 +7,7 @@ export default async function handler(req, res) {
     
 
     if(method === "GET") {
+        console.log("Reached")
         try {
             const orders = await Order.find();
             res.status(200).json(orders);
