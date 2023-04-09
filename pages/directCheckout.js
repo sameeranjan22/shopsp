@@ -46,7 +46,7 @@ const directCheckout = () => {
         "amount": totalPrice
         }
       try{
-        const { data } = await Axios({url: "/api/orders", method: "POST", data: order, timeout: 1000})
+        const { data } = await Axios({url: "/api/orders", method: "POST", data: order, timeout: 10000})
         .then(function (response) {
           if (response.data.redirect == '/') {
               window.location.href = "/success"
